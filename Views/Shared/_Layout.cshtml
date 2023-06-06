@@ -7,9 +7,31 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/CertificateImageProcessing.styles.css" asp-append-version="true" />
+
+    <style>
+        .myform {
+            border: 1px solid;
+            padding: 2rem;
+            margin-top: 2rem;
+            border-radius: 10px;
+        }
+        .form-group {
+            margin: 3rem 0 !important;
+        }
+        .certificate-img {
+            width: auto;
+            height: 100vh;
+            padding-bottom: 0 !important;
+        }
+        .img-div {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+
 </head>
 <body>
-    <header>
+    @*<header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">CertificateImageProcessing</a>
@@ -29,18 +51,18 @@
                 </div>
             </div>
         </nav>
-    </header>
+    </header>*@
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+   @* <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2023 - CertificateImageProcessing - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
-    </footer>
+    </footer>*@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
